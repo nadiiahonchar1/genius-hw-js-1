@@ -9,10 +9,7 @@ document.querySelector("#is-hidden").addEventListener("click", () => {
 });
 
 function toggleNode(node) {
-  // Знаходимо наступний елемент ul (дочірній вузол)
   var childUl = node.querySelector("ul");
-
-  // Змінюємо стиль відображення ul
   if (childUl) {
     childUl.style.display =
       childUl.style.display === "none" || childUl.style.display === ""
